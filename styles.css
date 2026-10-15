@@ -767,21 +767,21 @@ body {
   }
 }
 
-  .card::before { border-radius: 2rem; }
+.card::before { border-radius: 2rem; }
 
-  .profile-side { padding: 1.8rem 1rem; }
+.profile-side { padding: 1.8rem 1rem; }
 
-  .avatar-frame {
+.avatar-frame {
     width: 130px;
     height: 130px;
   }
 
-  .name { font-size: 1.6rem; }
+.name { font-size: 1.6rem; }
 
-  .data-list li {
+.data-list li {
     grid-template-columns: 24px 1fr;
     row-gap: 0.15rem;
-  }
+}
 
   .data-label { grid-column: 2; }
   .data-value { grid-column: 2; font-size: 0.9rem; }
@@ -795,7 +795,7 @@ body {
   .address-line { justify-content: center; }
 
   .map-preview { height: 150px; }
-}
+
 
 @media (max-width: 450px) {
   body { padding: 0.7rem 0.5rem; }
