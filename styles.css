@@ -650,12 +650,122 @@ body {
    RESPONSIVE
    ============================================ */
 @media (max-width: 800px) {
+  body {
+    padding: 1rem 0.7rem;
+    align-items: flex-start;
+  }
+
   .card {
     grid-template-columns: 1fr;
-    padding: 1.8rem;
+    padding: 1.4rem;
     border-radius: 2rem;
-    gap: 1.5rem;
+    gap: 1.2rem;
   }
+
+  .card::before { border-radius: 2rem; }
+
+  .profile-side {
+    padding: 1.6rem 1rem;
+    border-radius: 1.6rem;
+  }
+
+  .avatar-frame {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1rem;
+  }
+
+  .name {
+    font-size: 1.4rem;
+  }
+
+  .badge {
+    font-size: 0.65rem;
+    padding: 0.35rem 1rem;
+  }
+
+  .letter-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .letter-header i {
+    font-size: 1.3rem;
+  }
+
+  /* ---- LISTA DE DATOS COMPACTA ---- */
+  .data-section {
+    padding: 1.1rem 1rem;
+    border-radius: 1.2rem;
+  }
+
+  .data-list {
+    gap: 0.5rem;
+  }
+
+  .data-list li {
+    grid-template-columns: 22px 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 0.6rem;
+    row-gap: 0.1rem;
+    padding: 0.5rem 0.2rem;
+    font-size: 0.88rem;
+  }
+
+  .data-list li i {
+    grid-row: 1 / 3;
+    align-self: center;
+    font-size: 0.95rem;
+  }
+
+  .data-label {
+    grid-column: 2;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #7c3aed;
+  }
+
+  .data-value {
+    grid-column: 2;
+    font-size: 0.88rem;
+    line-height: 1.35;
+  }
+
+  /* ---- UBICACIÓN ---- */
+  .location-section {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 1.1rem 1rem;
+    border-radius: 1.2rem;
+    gap: 0.9rem;
+  }
+
+  .location-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+
+  .location-details h3 {
+    justify-content: center;
+    font-size: 0.98rem;
+  }
+
+  .address-line {
+    justify-content: center;
+    font-size: 0.86rem;
+  }
+
+  .map-preview {
+    height: 150px;
+  }
+
+  .map-link {
+    font-size: 0.82rem;
+  }
+}
 
   .card::before { border-radius: 2rem; }
 
@@ -688,13 +798,35 @@ body {
 }
 
 @media (max-width: 450px) {
-  body { padding: 1rem 0.5rem; }
-  .card { padding: 1.2rem; }
-  .data-section { padding: 1.1rem; }
-  .location-section { padding: 1.1rem; }
-  .letter-header h2 { font-size: 1.35rem; }
+  body { padding: 0.7rem 0.5rem; }
+
+  .card { padding: 1rem; border-radius: 1.6rem; }
+  .card::before { border-radius: 1.6rem; }
+
+  .profile-side { padding: 1.4rem 0.8rem; }
+
+  .avatar-frame { width: 105px; height: 105px; }
+
+  .name { font-size: 1.25rem; }
+
+  .badge { font-size: 0.6rem; padding: 0.3rem 0.9rem; }
+
+  .letter-header h2 { font-size: 1.2rem; }
+
+  .data-section { padding: 1rem 0.9rem; }
+
+  .data-list li {
+    grid-template-columns: 20px 1fr;
+    font-size: 0.85rem;
+    padding: 0.45rem 0.15rem;
+  }
+
+  .data-label { font-size: 0.75rem; }
+  .data-value { font-size: 0.85rem; }
+
   .map-preview { height: 130px; }
-  .name { font-size: 1.4rem; }
+
+  .location-icon { width: 44px; height: 44px; font-size: 1.15rem; }
 }
 
 /* ============================================
